@@ -8,16 +8,21 @@ const dbPath = path.join(__dirname, '..', 'db', 'db.json');
 const router = express.Router();
 
 
-
-router.get('/notes', (req, res) => {
+router.get('/notes', async (req, res) => {
     try {
-        const data = fs.readFileSync(dbPath, 'utf8');
-        res.json(data)
+        const filePath = path.join(__dirname, '../db/db.json');
+        fs.readFile(filePath, 'utf8', (error, data) => {
+            if (error) {
+                res.status(500).send('Internal Server Error');
+            } else {
+                const notes = JSON.parse(data);
+                res.json(notes);
+                console.log("success" + notes.title + notes.text + "logged");
+            }
+        });
     } catch (error) {
-        res.status(500).send('Internal Server Error');  
+        res.status(500).send('Internal Server Error');
     }
 });
-
-
 
 module.exports = router

@@ -2,6 +2,10 @@
     {
         "title":"Test Title",
         "text":"Test text"
+    },
+    {
+        "title":"wtf",
+        "text":"its actually working"
     }
 ]
 

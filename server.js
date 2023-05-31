@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')))
-app.use('./api', require('./routes/api'));  
+app.use('/api', require('./routes/api'));  
 
 // Set path to the notes.html
 app.get('/notes', (req, res) => {
