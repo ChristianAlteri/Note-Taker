@@ -6,7 +6,7 @@ The Note Taker App is a simple and intuitive application that allows users to cr
 
  ![Alt text](./Assets/Screen.jpg "APP UI")
 
- [Link to HEROKU deployment](https://drive.google.com/file/d/1Cp7M5bnhzL9RQsuyeFV9hDPOjrKwckQH/view)
+ [Link to HEROKU deployment](https://christians-second-note-taker.herokuapp.com/)
 
 ## Table of contents:
 
@@ -46,6 +46,8 @@ Create New Note: To create a new note, users can simply click on the Write icon 
 
 Written by Christian Alteri
 
+To go to the deployed Heroku site, [click here](https://christians-second-note-taker.herokuapp.com/).
+OR 
 To learn more about my project, [click here](https://github.com/ChristianAlteri/Note-Taker).
 
 ## How to Contribute
